@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Description -->
+    <meta name="keywords" content="html, css, summaru" />
+    <meta name="description" content="Мой первый сайт резюме" />
+    <title>First Site</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- scripts -->
+    <script src="./scripts/app.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img id="me" src="./img/me.jpeg" alt="it's me" />
+      <h1>Андрей Мишин</h1>
+      <p>Мне <strong>22</strong> года,</p>
+      <p>люблю <em> кушать, программировать </em> и играть в волейбол</p>
+      <p>
+        <b><i>Список социальных сетей</i></b>
+      </p>
+      <a href="#" target="_blank">VK</a> |
+      <a href="#" target="_blank">YouTube</a> |
+      <a href="#" target="_blank">GitHub</a> <br />
+    </header>
+
+    <hr size="5" noshade="" />
+
+    <h2>Мои хобби</h2>
+
+    <ul>
+      <li>Кушать</li>
+      <li>Гулять</li>
+      <li>Программировать</li>
+      <li>Волейбол</li>
+    </ul>
+
+    <hr size="5" noshade="" />
+
+    <h2>Опыт работы</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Долджность</th>
+          <th>Год</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>LPTracker</td>
+          <td>Фронтенг</td>
+          <td>2015-1016</td>
+        </tr>
+        <tr>
+          <td>Tracker</td>
+          <td>Software Enginer</td>
+          <td>2016-2017</td>
+        </tr>
+        <tr>
+          <td>Software Outsourcing Services</td>
+          <td>Senior Frontend</td>
+          <td>2017-2018</td>
+        </tr>
+        <tr>
+          <td>YouTube</td>
+          <td>Blogger</td>
+          <td>2019-сейчас</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr noshade="" size="5" />
+
+    <h2>Связаться со смной</h2>
+    
+    <footer>
+      <form action="/">
+        <div>
+          <label for="name">Ваше имя: </label>
+          <input type="text" id="name" placeholder="Введите имя" />
+        </div>
+        <div>
+          <label for="email">Ваш email</label>
+          <input type="email" id="email" placeholder="Введите email" />
+        </div>
+        <div>
+          <label for="message">Ваше сообщение:</label>
+          <br />
+          <textarea
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Введите сообщение..."
+          ></textarea>
+          <br />
+        </div>
+        <input type="submit" value="Отправить!" />
+      </form>
+    </footer>
+  </body>
+</html>
