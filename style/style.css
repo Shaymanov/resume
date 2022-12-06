@@ -4,10 +4,33 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-* {
+body {
     font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.link a:hover{
+    color: #ff0000d7;
+    text-decoration: none;
+
 }
 
 #me{
-    width: 200px;
+    width: 300px;
+    border-radius: 100%;
+    border-style: double;
+    border-color: black;
+}
+
+.hobbi{
+    color: #1500ff;
+    background-color: #f1f1f1;
+}
+
+.lvlWork{
+    font-style: italic;
+    font-weight: bold;
 }
