@@ -22,94 +22,99 @@
     <script src="./scripts/app.js"></script>
   </head>
 
-  <body>
-    <header>
-      <img id="me" src="./img/me.jpeg" alt="it's me" />
-      <h1>Андрей Мишин</h1>
-      <p>Мне <strong>22</strong> года,</p>
-      <p>люблю <em> кушать, программировать </em> и играть в волейбол</p>
-      <p>
-        <b><i>Список социальных сетей</i></b>
-      </p>
-      <div class="link">
-        <a href="#" target="_blank">VK</a> |
-        <a href="#" target="_blank">YouTube</a> |
-        <a href="#" target="_blank">GitHub</a>
+  <body class="container">
+    <header class="header">
+      <img src="./img/me.jpeg" alt="it's me" />
+      <div class="info-text">
+        <h1>Андрей Мишин</h1>
+        <p>Мне <strong>22</strong> года,</p>
+        <p>Люблю <em> кушать, программировать </em> и играть в волейбол</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          corrupti suscipit excepturi consectetur deserunt quasi, maxime eum
+          quae nam beatae veniam aut natus ut quaerat?
+        </p>
+        <h4><i>Список социальных сетей</i></h4>
+        <div class="link">
+          <a href="#" target="_blank">VK</a> |
+          <a href="#" target="_blank">YouTube</a> |
+          <a href="#" target="_blank">GitHub</a>
+        </div>
       </div>
     </header>
 
-    <hr size="5" noshade="" />
+    <div class="card cl1">
+      <h2>Мои хобби</h2>
 
-    <h2 class="hobbi">Мои хобби</h2>
+      <ul class="list">
+        <li>Кушать</li>
+        <li>Гулять</li>
+        <li>Программировать</li>
+        <li>Волейбол</li>
+      </ul>
+    </div>
 
-    <ul class="hobbi">
-      <li>Кушать</li>
-      <li>Гулять</li>
-      <li>Программировать</li>
-      <li>Волейбол</li>
-    </ul>
+    <div class="card cl2">
+      <h2>Опыт работы</h2>
+      <table class="lvlWork">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Долджность</th>
+            <th>Год</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LPTracker</td>
+            <td>Фронтенг</td>
+            <td>2015-1016</td>
+          </tr>
+          <tr>
+            <td>Tracker</td>
+            <td>Software Enginer</td>
+            <td>2016-2017</td>
+          </tr>
+          <tr>
+            <td>Software Outsourcing Services</td>
+            <td>Senior Frontend</td>
+            <td>2017-2018</td>
+          </tr>
+          <tr>
+            <td>YouTube</td>
+            <td>Blogger</td>
+            <td>2019-сейчас</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <hr size="5" noshade="" />
+    <footer class="footer card cl3">
+        <h2>Связаться со мной</h2>
 
-    <h2 class="">Опыт работы</h2>
-    <table class="lvlWork">
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Долджность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>LPTracker</td>
-          <td>Фронтенг</td>
-          <td>2015-1016</td>
-        </tr>
-        <tr>
-          <td>Tracker</td>
-          <td>Software Enginer</td>
-          <td>2016-2017</td>
-        </tr>
-        <tr>
-          <td>Software Outsourcing Services</td>
-          <td>Senior Frontend</td>
-          <td>2017-2018</td>
-        </tr>
-        <tr>
-          <td>YouTube</td>
-          <td>Blogger</td>
-          <td>2019-сейчас</td>
-        </tr>
-      </tbody>
-    </table>
+        <div class="form-row">
+          <div class="form">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
 
-    <hr noshade="" size="5" />
-
-    <h2>Связаться со смной</h2>
-
-    <footer>
-      <form action="/">
-        <div>
-          <label for="name">Ваше имя: </label>
-          <input type="text" id="name" placeholder="Введите имя" />
+          <div class="form">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
         </div>
-        <div>
-          <label for="email">Ваш email</label>
-          <input type="email" id="email" placeholder="Введите email" />
-        </div>
-        <div>
+
+        <div class="form">
           <label for="message">Ваше сообщение:</label>
-          <br />
           <textarea
             id="message"
-            cols="30"
+            cols="20"
             rows="5"
             placeholder="Введите сообщение..."
           ></textarea>
         </div>
-        <input type="submit" value="Отправить!" />
-      </form>
+
+        <input class="btn" type="submit" value="Отправить!" />
     </footer>
   </body>
 </html>

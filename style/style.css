@@ -3,34 +3,164 @@
 
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
-    font-size: 18px;
-    background-color: #000000;
-    color: #ffffff;
+    font-size: 16px;
+    background-color: f1f1f1;
+    color: #110202;
 }
 
-.link a:hover{
-    color: #ff0000d7;
+.container{
+    max-width: 750px;
+    margin: auto;
+}
+
+a, a:hover{
     text-decoration: none;
-
 }
 
-#me{
-    width: 300px;
-    border-radius: 100%;
-    border-style: double;
-    border-color: black;
+a{
+    font-family: 'Kenia', cursive;
 }
 
-.hobbi{
-    color: #1500ff;
-    background-color: #f1f1f1;
+a:hover{
+    color: #ff0000d7;
+    transition: all 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:active{
+    color: #000;
+}
+
+.header img{
+    width: 250px;
+    margin: 10px;
+    border-radius: 30px ;
+    box-shadow: 34px 14px 40px rgba(0, 0, 0, 0.7);
+}
+
+.card{
+    margin: 10px 2px 5px 2px;
+    padding: 10px 0px 10px 30px;
+    border-radius: 50px;
+}
+
+.header {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.info-text{
+    margin-left: 40px;
+}
+
+.info-text p{
+    margin-bottom: 10px;
+}
+
+.cl1{
+    padding: 30px;
+    background-color: #00b3ff;
+}
+
+.cl2{
+    background-color: #cc00ff;
+}
+
+.cl3{
+    background-color: #22ab0a;
+}
+
+
+.btn{
+    padding: 15px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: rgb(25, 0, 255);
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.list{
+    padding: 0px 20px;
+}
+
+.list li{
+    color: #ff0000;
+    font-weight: bold;
 }
 
 .lvlWork{
     font-style: italic;
     font-weight: bold;
+    width: 100%;
+}
+
+.lvlWork td {
+    padding-bottom: 10px;
+}
+
+.lvlWork td:nth-child(2),
+.lvlWork td:nth-child(3) {
+  color: #11ff00;
+}
+
+.footer h2{
+    text-align: center;
+}
+
+.form-row{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row, .form{
+    margin-right: 20px;
+    width: 50%;
+}
+
+.form-row .form:last-child{
+    margin-right: 0;
+}
+
+
+.form input, 
+.form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@media (max-width: 650px){
+    .header{
+        display: block;
+        text-align: center;
+    }
+
+    .farm-row{
+        display: block;
+    }
+    .form-row, .form{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
